@@ -1,0 +1,13 @@
+﻿La génération a démarré 2015-02-03 10:40:00.
+     1>Projet "C:\ProgSession4\Lab2\DynamicArrayTests\DynamicArrayTests.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ProgSession4\Lab2\Debug\DynamicArrayTests.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\ProgSession4\Lab2\Debug\DynamicArrayTests.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ProgSession4\Lab2\Debug\DynamicArrayTests.lib" /MACHINE:X86 /DLL Debug\stdafx.obj
+         Debug\DynamicArrayTests.obj
+         C:\ProgSession4\Lab2\Debug\DynamicArray.lib
+            CrÚation de la bibliothÞque C:\ProgSession4\Lab2\Debug\DynamicArrayTests.lib et de l'objet C:\ProgSession4\Lab2\Debug\DynamicArrayTests.exp
+         DynamicArrayTests.vcxproj -> C:\ProgSession4\Lab2\Debug\DynamicArrayTests.dll
+     1>Génération du projet "C:\ProgSession4\Lab2\DynamicArrayTests\DynamicArrayTests.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:00.33

@@ -6,23 +6,21 @@ class DynamicArray
 {
 
 public:
-	DynamicArray();
-	DynamicArray(int capacite);
+
+	DynamicArray(const DynamicArray & _source);
+	DynamicArray(int _capacite = 100);
 	~DynamicArray();
-	int getCapacite()const;
-	int getElement(unsigned int _index)const;
-	void setElement(unsigned int _index);
-	void setCapacite(unsigned int _nouvelleCapacite);
-	
 
-
+	int getCapacite() const;
+	int getElement(int _index) const;
+	void setElement(int _index, int _valeur);
+	void setCapacite(int _nouvelleCapacite);
+	DynamicArray& operator=(DynamicArray &_source);
 
 
 private:
+	int* tabElement;
 	int capacite;
-	int* tableau;
-	int element;
-	int position;
 };
 
 
