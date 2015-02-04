@@ -16,6 +16,7 @@ public:
 	void setElement(int _index, int _valeur);
 	void setCapacite(int _nouvelleCapacite);
 	DynamicArray& operator=(DynamicArray &_source);
+	bool operator==(DynamicArray& _source);
 
 
 private:

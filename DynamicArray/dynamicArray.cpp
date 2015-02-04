@@ -3,7 +3,7 @@
 using namespace std;
 
 DynamicArray::DynamicArray(int _capacite){
-	//aurait du mettre le throw au début : if (_capacite <= 0) throw std::incalid_argument ("blabla");
+	
 	if (_capacite > 0){
 		capacite = _capacite;
 		tabElement = new int[capacite];
@@ -44,6 +44,28 @@ DynamicArray& DynamicArray::operator=(DynamicArray& _source)
 	return *this;
 }
 
+bool DynamicArray::operator==(DynamicArray& _source)
+{
+	bool same = true;
+
+	if (&_source != this)
+	{
+		for (int i = 0; i < capacite && same; ++i)
+		{
+			if(tabElement[i] != _source.tabElement[i])
+			{
+				same = false;
+			}
+		}
+
+		if (capacite != _source.capacite)
+		{
+			same = false;
+		}
+	}
+	return same;
+}
+
 
 
 
@@ -57,7 +79,7 @@ int DynamicArray::getCapacite() const{
 
 
 int DynamicArray::getElement(int _index) const{
-	//encore la, ici j'aurais du envoyer l'exception directement au début
+
 	if (_index >= 0 && _index < capacite){
 		return tabElement[_index];
 	}
@@ -76,7 +98,7 @@ void DynamicArray::setElement(int _index, int _valeur){
 }
 
 void DynamicArray::setCapacite(int _nouvelleCapacite){
-	// utiliser le "min" pour alléger le for ex : for (int i = 0; i < min(capacite, _nouvelleCapacite); i++
+	
 
 	if (_nouvelleCapacite > 0){
 		int* nouveauTabElement = new int[_nouvelleCapacite];
@@ -106,3 +128,5 @@ void DynamicArray::setCapacite(int _nouvelleCapacite){
 		throw invalid_argument("La capacité du nouveau tableau ne peut pas être inférieure à 1");
 	}
 }
+
+
